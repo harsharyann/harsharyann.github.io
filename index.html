@@ -3,218 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsh Aryan | Profile</title>
+    <title>Harsh Aryan - Data & Design</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        /* General Styling */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
-
-        /* The main profile card container */
-        .profile-card {
-            background-color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            display: flex;
-            max-width: 900px;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        /* Left Sidebar for Picture and Contact Info */
-        .card-sidebar {
-            background-color: #2c3e50; /* Dark blue-gray */
-            color: #ecf0f1;
-            padding: 40px 30px;
-            width: 35%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #3498db; /* Blue border */
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        .name {
-            font-size: 1.8em;
-            font-weight: 600;
-            margin: 0;
-        }
-
-        .title {
-            font-size: 1em;
-            font-weight: 300;
-            color: #bdc3c7; /* Lighter gray for subtitle */
-            margin-top: 5px;
-            margin-bottom: 25px;
-        }
-
-        .contact-info a {
-            color: #ecf0f1;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 12px;
-            font-size: 0.9em;
-            transition: color 0.3s ease;
-        }
-
-        .contact-info a:hover {
-            color: #3498db; /* Highlight color on hover */
-        }
-
-        .contact-info i {
-            margin-right: 10px;
-            width: 20px; /* Align icons nicely */
-        }
-
-        /* Right side for About and Skills */
-        .card-main {
-            padding: 40px;
-            width: 65%;
-        }
-
-        .card-section h2 {
-            font-size: 1.5em;
-            font-weight: 600;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-        
-        .tagline {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 25px;
-            font-size: 0.95em;
-            line-height: 1.5;
-        }
-
-        .about-text {
-            font-size: 0.95em;
-            line-height: 1.7;
-            text-align: justify;
-            color: #555;
-        }
-
-        .skills-list {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill-badge {
-            background-color: #eaf3fb;
-            color: #2980b9;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-
-        /* Responsive Design for smaller screens */
-        @media (max-width: 768px) {
-            body {
-                padding: 0;
-            }
-            .profile-card {
-                flex-direction: column;
-                border-radius: 0;
-            }
-            .card-sidebar, .card-main {
-                width: 100%;
-                box-sizing: border-box; /* Ensures padding is included in the width */
-            }
-            .card-sidebar {
-                padding: 30px 20px;
-            }
-            .card-main {
-                padding: 30px 20px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="container">
+        <header class="main-header">
+            <div class="logo">HA.</div>
+            <nav class="main-nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="mailto:imharsharyan@gmail.com">Contact</a>
+            </nav>
+        </header>
 
-    <div class="profile-card">
-        <aside class="card-sidebar">
-            <img src="BK picture.jpg" alt="Profile Picture of Harsh Aryan" class="profile-picture">
-            <h1 class="name">Harsh Aryan</h1>
-            <p class="title">UX/UI Designer & Graphic Designer</p>
-            
-            <div class="contact-info">
-                <a href="mailto:imharsharyan@gmail.com" target="_blank">
-                    <i class="fas fa-envelope"></i> imharsharyan@gmail.com
-                </a>
-                <a href="https://github.com/harsharyann" target="_blank">
-                    <i class="fab fa-github"></i> github.com/harsharyann
-                </a>
-                <a href="https://www.linkedin.com/in/harsharyann/" target="_blank">
-                    <i class="fab fa-linkedin"></i> linkedin.com/in/harsharyann
-                </a>
-            </div>
-        </aside>
-
-        <main class="card-main">
-            <section class="card-section">
-                <p class="tagline">
-                    Skilled in Predictive Analytics, Data Viz & GenAI | Proficient in Python, SQL & Java | AI-Driven Mindset
-                </p>
+        <main>
+            <section class="hero" id="hero">
+                <h1 class="hero-title animate-in">Harsh Aryan</h1>
+                <p class="hero-subtitle animate-in">Data Scientist & Graphic Designer</p>
+                <p class="hero-tagline animate-in">Solving complex problems at the intersection of analytics and aesthetics.</p>
+                <div class="hero-links animate-in">
+                    <a href="https://www.linkedin.com/in/harsharyann/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/harsharyann" target="_blank">GitHub</a>
+                    <a href="[LINK_TO_YOUR_RESUME.PDF]" target="_blank">Resume</a>
+                </div>
             </section>
 
-            <section class="card-section">
-                <h2>About Me</h2>
-                <p class="about-text">
-                    My academic journey has been marked by a passion for learning and a commitment to excellence. Throughout my schooling at Kendriya Vidyalaya, I have achieved numerous accolades, demonstrating both versatility and a competitive spirit.
-                    <br><br>
-                    Among my notable achievements are winning the Elocution Competition at the cluster level, securing a top position in the Spelling Bee at the regional level, and excelling in the Green Olympiad. These accomplishments reflect not only my proficiency in communication and language skills but also my ability to perform under pressure and succeed in diverse domains.
-                    <br><br>
-                    Currently, as a student at IIT Madras, I am exploring the dynamic field of data science, where I aim to contribute to innovative and impactful projects. My academic foundation, coupled with a strong interest in technology and analytics, drives me to continuously push boundaries and embrace new challenges.
-                    <br><br>
-                    Beyond academics, I actively contribute to the Media and PR team of Aayam Drama society at IIT Madras. I also served as the Event Head for Awaaz-e-Nukkad Paradox 2025, leading the planning and execution of one of the most engaging events of the year. These roles have honed my leadership, organizational, and creative communication skills, adding to my growth as a well-rounded individual.
-                    <br><br>
-                    I remain committed to lifelong learning and aspire to make meaningful contributions in both academic and real-world contexts.
-                </p>
+            <section class="content-section" id="about">
+                <h2 class="section-heading animate-in">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text animate-in">
+                        <p>Hello! I'm a Data Science student at the prestigious <strong>IIT Madras</strong>, driven by a dual passion for uncovering data-driven insights and crafting compelling visual narratives. My work is about building bridges—between raw information and clear strategy, between complex analysis and intuitive design.</p>
+                        <p>My journey is marked by a commitment to excellence, from winning national-level elocution and spelling bee competitions to leading high-impact events like <strong>'Awaaz-e-Nukkad' Paradox 2025</strong>. These experiences have instilled in me a unique blend of analytical rigor and creative communication, skills I now channel into the dynamic world of data science.</p>
+                        <p>I thrive on challenges and am dedicated to a path of lifelong learning, aiming to contribute meaningfully to projects that demand both technical depth and a creative touch.</p>
+                    </div>
+                    <div class="about-image-container animate-in">
+                         <img src="https://via.placeholder.com/400" alt="Harsh Aryan" class="about-image">
+                    </div>
+                </div>
             </section>
-            
-            <section class="card-section">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li class="skill-badge">Python</li>
-                    <li class="skill-badge">SQL</li>
-                    <li class="skill-badge">Java</li>
-                    <li class="skill-badge">Predictive Analytics</li>
-                    <li class="skill-badge">Data Visualization</li>
-                    <li class="skill-badge">Generative AI (GenAI)</li>
-                    <li class="skill-badge">AWS Cloud</li>
-                    <li class="skill-badge">HTML</li>
-                </ul>
+
+            <section class="content-section" id="skills">
+                <h2 class="section-heading animate-in">Core Competencies</h2>
+                <div class="skills-grid animate-in">
+                    <div class="skill-item">
+                        <div class="skill-title">Python</div>
+                        <div class="skill-desc">Data Analysis, Machine Learning, Automation</div>
+                    </div>
+                     <div class="skill-item">
+                        <div class="skill-title">Java</div>
+                        <div class="skill-desc">Object-Oriented Programming, Application Development</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">SQL</div>
+                        <div class="skill-desc">Database Management, Complex Queries</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">Git & GitHub</div>
+                        <div class="skill-desc">Version Control, Collaborative Development</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">AWS</div>
+                        <div class="skill-desc">Cloud Computing Fundamentals</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">Graphic Design</div>
+                        <div class="skill-desc">Visual Communication, Branding, UI/UX Concepts</div>
+                    </div>
+                </div>
             </section>
         </main>
-    </div>
 
+        <footer class="main-footer">
+            <p>Let's create something impactful.</p>
+            <a href="mailto:imharsharyan@gmail.com" class="contact-button">imharsharyan@gmail.com</a>
+            <div class="footer-bottom">
+                <span>© 2025</span>
+                <span>Designed by Harsh Aryan</span>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
